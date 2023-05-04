@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<link rel='stylesheet' href='stucss.css' type='text/css' />
+<script src="stujs.js" type='text/javascript'></script>
+</head>
+<body>
+<form name="stu">
+<h2>Student Registration Form Using Table in HTML</h2>
+<table align="center" cellpadding = "10">
+<!--------------------- User Name ------------------------------------------>
+<tr>
+<td>User Name</td>
+<td><input type="text" name="un" id="t1" class="tb" maxlength="25" placeholder="User Name" />
+(Max 25 Characters Allowed)
+</td>
+</tr>
+<!------------------------ Password --------------------------------------->
+<tr>
+<td>Password</td>
+<td><input type="password" name="pd" maxlength="25" placeholder="Password"/>
+(Max 25 Characters Allowed)
+</td>
+</tr>
+<!------------------------ Re-Password --------------------------------------->
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" name="cpd" maxlength="25" placeholder="Confirm Password"/>
+(Max 25 Characters Allowed)
+</td>
+</tr>
+<!-------------------------- Email ID ------------------------------------->
+<tr>
+<td>Email ID</td>
+<td><input type="email" name="eid" maxlength="30" placeholder="Sample@gmail.com"/></td>
+</tr>
+<!-------------------------- Mobile Number ------------------------------------->
+<tr>
+<td>Mobile Number</td>
+<td>
+<input type="text" name="mnb" maxlength="10" placeholder="1234567890"/>
+(10 Digits Allowed)
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="reset" value="Clear Form" id="res" class="btn" />
+<input type="submit" value="Validate" class="btn" onclick="registration()" />
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

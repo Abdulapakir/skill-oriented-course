@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+<book category="web">
+<title lang="en">Learning XML</title>
+<author>Erik T. Ray</author>
+<year>2008</year>
+<price>$30.00</price>
+</book>
+<book category="DataBase">
+<title lang="en">Data Base Management System</title>
+<author>Robert Sebesta</author>
+<year>2010</year>
+<price>$49.99</price>
+</book>
+<book category="Programming">
+<title lang="en">JAVA Programming</title>
+
+<author>James Gosling</author>
+<year>1992</year>
+<price>$52.95</price>
+</book>
+</bookstore>

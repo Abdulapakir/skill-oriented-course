@@ -1,0 +1,27 @@
+<html>
+<body>
+<div id="disp">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="getTextFile()">Click Here to Get the Data From Text File</button>
+</div>
+<script>
+function getTextFile()
+{
+// Creating the XMLHttpRequest object
+const xhttp = new XMLHttpRequest();
+// Instantiating the request object
+xhttp.open("GET", "sample.txt");
+xhttp.onreadystatechange = function()
+{
+// Check if the request is compete and was successful
+if(this.readyState === 4 && this.status === 200)
+{
+// Inserting the response from server into an HTML element
+document.getElementById("disp").innerHTML = this.responseText;
+}
+};
+xhttp.send(); // Sending the request to the server
+}
+</script>
+</body>
+</html>
